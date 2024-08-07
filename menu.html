@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        
+
+        function showItems() {
+            var selectedCategory = document.getElementById('menu-select').value;
+            var categories = ['biryani', 'starters', 'beverages', 'desserts', 'tiffis'];
+            categories.forEach(function(category) {
+                document.getElementById(category).style.display = 'none';
+            });
+            if (selectedCategory) {
+                document.getElementById(selectedCategory).style.display = 'block';
+            }
+        }
+        
+            </script>
+
+</head>
+<body>
+    <div class="navbar">
+        
+            <a href="/index.html">Home</a>
+            <a href="/menu.html">Menu</a>
+            <a href="/about.html">About us</a>
+            <a href="/contact.html">contact us</a>
+        
+    </div>
+
+    <h1 class="menu-name">Menu</h1>
+    <label for="menu-select">Choose a category:</label>
+    <select id="menu-select" onchange="showItems()">
+        <option value="">--Select--</option>
+        <option value="biryani">Biryani</option>
+        <option value="starters">Starters</option>
+        <option value="beverages">Beverages</option>
+        <option value="desserts">Desserts</option>
+        <option value="tiffis">Tiffis</option>
+    </select>
+
+    <div id="biryani" class="menu-items">
+        <h2>Biryani</h2>
+        <div class="images">
+            <figure>
+                <img src="/assets/biryanis/Hyderbadi-Biryani.jpg" alt="">
+                <figcaption>Hyderbadi-Biryani</figcaption>
+            </figure>
+
+            <figure>
+                <img src="/assets/biryanis/Kalyani-Biryani.jpg" alt="">
+                <figcaption>Kalyani-Biryani</figcaption>
+            </figure>
+
+            <figure>
+                <img src="/assets/biryanis/Kashmiri-Biryani.jpg" alt="">
+                <figcaption>Kashmiri-Biryani</figcaption>
+            </figure>
+
+            <figure>
+                <img src="/assets/biryanis/kolkata-Biryani.jpg" alt="">
+                <figcaption>kolkata-Biryani</figcaption>
+            </figure>
+
+            <figure>
+                <img src="/assets/biryanis/pexels-dhiraj-jain-207743066-12737656.jpg" alt="">
+                <figcaption>Chicken-Biryani</figcaption>
+            </figure>
+
+            <figure>
+                <img src="/assets/biryanis/pexels-saveurssecretes-5410410.jpg" alt="">
+                <figcaption>Veg-Biryani</figcaption>
+            </figure>
+
+
+        </div>
+    </div>
+    <div id="starters" class="menu-items">
+        <h2>Starters</h2>
+        <div class="images">
+
+            <figure>
+                   
+                <img src="/assets/starters/alex-bayev-Rvf3MNqWc8g-unsplash.jpg" alt="">
+                <figcaption>Prawns</figcaption>
+            </figure>
+
+            <figure>
+                <img src="/assets/starters/Apollo-fish.jpg" alt="">
+                <figcaption>Apollo-fish</figcaption>
+            </figure>
+            <figure>
+                <img src= "/assets/starters/chicken-65.jpg"alt="">
+                <figcaption>chicken-65</figcaption>
+            </figure>
+            <figure>
+                <img src="/assets/starters/chicken-65.jpg" alt="">
+                <figcaption>chicken-65</figcaption>
+            </figure>
+            <figure>
+                <img src="/assets/starters/egg.jpg" alt="">
+                <figcaption>Egg </figcaption>
+            </figure>
+            <figure>
+                <img src="/assets/starters/Lemon-chicken.jpg" alt="">
+                <figcaption>Lemon-chicken</figcaption>
+            </figure>
+            
+           
+        </div>
+    </div>
+    <div id="beverages" class="menu-items">
+        <h2>Beverages</h2>
+        <div class="images">
+
+            <figure>
+                <img src="/assets/Beverages/Blue Lagoon Mocktail.jpeg" alt="">
+                <figcaption>Lagoon Mocktail</figcaption>
+            </figure>
+
+            <figure>
+                <img src="/assets/Beverages/Caramel Hazelnut Iced Coffee [10 Minutes].jpeg" alt="">
+                <figcaption>Hazelnut Mocktail</figcaption>
+            </figure>
+
+            <figure>
+                <img src="/assets/Beverages/Creative Culinary - Food and Cocktail Blog.jpeg" alt="">
+                <figcaption>Yellow Dreamy Mocktail</figcaption>
+            </figure>
+
+
+            <figure>
+                <img src="/assets/Beverages/Healthy Strawberry Lemon Smoothie - The Girl Who Ate Everything.jpeg" alt="">
+                <figcaption>Strawberry Mocktail</figcaption>
+            </figure>
+
+            
+            <figure>
+                <img src="/assets/Beverages/Double-Decker Tropical Avocado Smoothies - Cooking Classy.jpeg" alt="">
+                <figcaption>Avocado Mocktail</figcaption>
+            </figure>
+          
+          <figure>
+              <img src="/assets/Beverages/Naturally Sweetened Iced Green Tea.jpeg" alt="">
+              <figcaption>Iced Green Tea</figcaption>
+          </figure>
+            
+        </div>
+    </div>
+    <div id="desserts" class="menu-items">
+        <h2>Desserts</h2>
+        <div class="images">
+            <img src="/assets/Desserts/Creamy Kheer Recipe (Indian Rice Pudding) - Shivani Loves Food.jpeg" alt="">
+            <img src="/assets/Desserts/pexels-abhinavcoca-291528.jpg" alt="">
+            <img src="/assets/Desserts/pexels-teejay-1362534.jpg" alt="">
+            <img src="/assets/Desserts/pexels-vojtech-okenka-127162-1055272.jpg" alt="">
+            <img src="/assets/Desserts/rasagulla.jpg" alt="">
+            <img src="/assets/Desserts/Sheerkurma.jpg" alt="">
+        </div>
+    </div>
+    <div id="tiffis" class="menu-items">
+        <h2>Tiffis</h2>
+        <div class="images">
+            <img src="/assets/Tiffins/ananthan-chithiraikani-M3pTx74AH6M-unsplash.jpg" alt="">
+            <img src="/assets/Tiffins/Bonda.jpg" alt="">
+            <img src="/assets/Tiffins/deepal-tamang-5oF7d_hPJG4-unsplash.jpg" alt="">
+            <img src="/assets/Tiffins/shreyak-singh-gFB1IPmH6RE-unsplash.jpg" alt="">
+            <img src="/assets/Tiffins/vd-photography-5kelQd63isg-unsplash.jpg" alt="">
+            
+        </div>
+    </div>
+   
+</body>
+</html>
