@@ -181,6 +181,7 @@ border: 5px solid rgb(26, 220, 16);
 .menu-name{
 text-align: center;
 /* background-color: rgb(166, 172, 172); */
+font-family: cursive;
 }
 figcaption{
 padding-left: 100px;
