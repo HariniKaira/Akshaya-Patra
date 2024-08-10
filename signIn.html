@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./register.css">
-  <script type="module" src="register.js" defers></script>
-    
+    <script type="module" src="./login.js" defers></script>
 </head>
 <body>
 
@@ -14,15 +13,12 @@
     <div class="overlay">
         
     <div class="register-container">
-        <form name="registration_form" id="registration_form" action="#" method="post" enctype="multipart/form-data">
+        <form action="/login" method="post">
                    <h1 style="font-weight: bolder;font-family: cursive;color: white;">Welcome Back...!</h1>
                  <input type="email" name="email" id="email" placeholder="email"> 
                  <input type="password" name="password" id="password" placeholder="password">
-                 <button style="background-color: aqua;cursor: pointer;" type="button" id="register">Create Account</button>
-                 <div class="signInAlign">
-                    <h4 style="color: white;">Already have an account?</h4>
-                   <h4 style="color: white;"> <a style="color: red;" href="./signIn.html">Sign in</a></h4>
-                </div>
+                 <button style="background-color: aqua;cursor: pointer;" type="button" id="login">Login</button>
+                
         </form>
     </div>
 

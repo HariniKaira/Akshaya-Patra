@@ -1,0 +1,43 @@
+.register-container{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    /* background-color: beige; */
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+   
+}
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    /* border-radius: 20%; */
+
+    
+}
+.signInAlign{
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+}
+.hero{
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-image: url('./assets/farzad-HSqFki-06_E-unsplash.jpg');
+}
+.overlay{
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    background-color: rgba(0,0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
